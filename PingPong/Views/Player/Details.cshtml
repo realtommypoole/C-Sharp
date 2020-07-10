@@ -1,0 +1,68 @@
+﻿@using PingPong.ViewModels
+@model PlayerDetailViewModel
+
+@{
+  ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+  <dl>
+
+
+
+    <dt>
+      @Html.DisplayNameFor(model => model.Team.League)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Team.League)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.Player.LastName)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Player.LastName)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.Player.FirstName)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Player.FirstName)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.Team.TeamName)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Team.TeamName)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.Player.RightHand)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Player.RightHand)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.Player.Age)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Player.Age)
+    </dd>
+
+  </dl>
+</div>
+<p>
+  @Html.ActionLink("Edit", "Edit", new { id = Model.Player.ID }) |
+  @Html.ActionLink("Back to List", "Index")
+</p>
