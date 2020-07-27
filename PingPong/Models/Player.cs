@@ -18,6 +18,7 @@ namespace PingPong.Models
         public DateTime DateOfBirth { get; set; }
         public int Age { get { return Convert.ToInt32(((DateTime.Now - DateOfBirth).TotalHours)/8760); } }
         public string Secret { get; set; }
+        public string Email { get; set; }
 
         public virtual ICollection<Team> Teams { get; set; } //player can have multiple teams, or none.
     }

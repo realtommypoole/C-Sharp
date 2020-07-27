@@ -135,6 +135,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007092051106_InitialCreate.cs" />
+    <Compile Include="Migrations\202007092051106_InitialCreate.designer.cs">
+      <DependentUpon>202007092051106_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007101650258_emaiToPlaye.cs" />
+    <Compile Include="Migrations\202007101650258_emaiToPlaye.designer.cs">
+      <DependentUpon>202007101650258_emaiToPlaye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Models\Team.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -200,6 +209,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202007092051106_InitialCreate.resx">
+      <DependentUpon>202007092051106_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007101650258_emaiToPlaye.resx">
+      <DependentUpon>202007101650258_emaiToPlaye.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
